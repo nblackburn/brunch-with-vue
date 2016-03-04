@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
+import Logger from 'vuex/logger';
 
 import auth from './modules/auth';
 
@@ -15,7 +16,7 @@ export default new Vuex.Store({
     },
 
     middlewares: [
-        Vuex.createLogger()
+        Logger()
     ]
 
 });
