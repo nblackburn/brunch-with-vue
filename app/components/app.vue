@@ -17,7 +17,7 @@
         
         vuex: {
             state: {
-                token: state => state.Auth.token
+                token: state => state.auth.token
             }
         },
 
