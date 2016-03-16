@@ -1,4 +1,5 @@
 import Vue from 'vue';
+import 'babel-polyfill';
 import VueRouter from 'vue-router';
 
 import store from './state/store';
