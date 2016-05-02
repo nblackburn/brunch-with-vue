@@ -7,6 +7,10 @@
         "type": "git",
         "url": "http://github.com/nblackburn/brunch-with-vue.git"
     },
+    "scripts": {
+        "watch": "brunch watch --server",
+        "build": "brunch build --production"
+    },
     "author": {
         "url": "http://nblackburn.uk",
         "name": "Nathaniel Blackburn",
