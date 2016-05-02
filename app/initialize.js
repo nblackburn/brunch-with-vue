@@ -15,6 +15,20 @@ Vue.use(VueResource);
 Vue.use(VueValidator);
 
 // 
+// Enviromnment
+// 
+
+const environment = process.env.NODE_ENV;
+
+// 
+// Configure Vue
+// Here we will configure Vue based on the environment we are running in.
+// 
+
+Vue.config.debug = (environment === 'development');
+Vue.config.devtools = (environment === 'development');
+
+// 
 // Application
 // Here we will create the application instance.
 // 
