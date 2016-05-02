@@ -1,7 +1,7 @@
 {
     "name": "brunch-with-vue",
     "description": "A skeleton application utilizing vue, vuex, vue-resource and vue-router.",
-    "version": "0.2.0",
+    "version": "0.2.2",
     "license": "MIT",
     "repository": {
         "type": "git",
