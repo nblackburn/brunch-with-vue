@@ -3,6 +3,7 @@ import 'babel-polyfill';
 import store from './state/store';
 import VueRouter from 'vue-router';
 import routes from './config/routes';
+import VueResource from 'vue-resource';
 import VueValidator from 'vue-validator';
 
 //
