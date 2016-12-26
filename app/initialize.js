@@ -53,5 +53,5 @@ const app = new Vue({
 });
 
 if (window) {
-    window.App = router.app;
+    window.App = app;
 }
