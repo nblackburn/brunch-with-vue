@@ -13,12 +13,9 @@
 
         name: 'Error',
 
-        props: {
+        data: {
 
-            path: {
-                type: String,
-                required: false
-            }
+            path: ''
         },
 
         created() {
