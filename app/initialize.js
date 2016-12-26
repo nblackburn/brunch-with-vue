@@ -3,6 +3,7 @@ import 'babel-polyfill';
 import store from './state/store';
 import VueRouter from 'vue-router';
 import routes from './config/routes';
+import RouterBase from './components/router-base.vue';
 import VueResource from 'vue-resource';
 import VueValidator from 'vue-validator';
 
@@ -30,39 +31,27 @@ Vue.config.debug = (environment === 'development');
 Vue.config.devtools = (environment === 'development');
 
 // 
-// Application
-// Here we will create the application instance.
-// 
-
-let application = {
-    store
-};
-
-// 
 // Router
 // Here we will create the router instance.
 // 
 
 let router = new VueRouter({
-    history: true
+    history: true,
+    routes
 });
-
-// 
-// Router mapping.
-// Here we will tell VueRouter what routes the application will be using.
-// 
-
-router.map(routes);
 
 // 
 // Start the application
 // Finally, we can start the application.
 // 
 
-router.start(application, '#content', function() {
-    
-    if (window) {
-        window.App = router.app;
-    }
-
+const app = new Vue({
+    el: '#content',
+    render: r => r(RouterBase),
+    router,
+    store
 });
+
+if (window) {
+    window.App = router.app;
+}
