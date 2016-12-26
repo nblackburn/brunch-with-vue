@@ -1,16 +1,18 @@
 import app from '../components/app.vue';
 import error from '../components/error.vue';
 
-export default {
+export default [
 
-    '*': {
-        name: 'error',
-        component: error
-    },
-
-    '/': {
+    {
+        path: '/',
         name: 'app',
         component: app
+    },
+
+    {
+        path: '*',
+        name: 'error',
+        component: error
     }
 
-}
+]
