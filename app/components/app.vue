@@ -9,17 +9,16 @@
 
 <script>
 
+    import {mapState} from 'vuex';
     import Auth from '../api/auth';
 
     export default {
-        
+
         name: 'App',
-        
-        vuex: {
-            state: {
-                token: state => state.auth.token
-            }
-        },
+
+        computed: mapState({
+            token: state => state.auth.token
+        }),
 
         created() {
             Auth.signin('username', 'password');
