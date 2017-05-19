@@ -17,7 +17,3 @@ If you found this plugin to be useful, please consider [donating](https://paypal
 ## License
 
 This component is licensed under [MIT](), see [license.md](license.md) for details.
-## Support on Beerpay
-Hey dude! Help me out for a couple of :beers:!
-
-[![Beerpay](https://beerpay.io/nblackburn/brunch-with-vue/badge.svg?style=beer-square)](https://beerpay.io/nblackburn/brunch-with-vue)  [![Beerpay](https://beerpay.io/nblackburn/brunch-with-vue/make-wish.svg?style=flat-square)](https://beerpay.io/nblackburn/brunch-with-vue?focus=wish)
