@@ -8,7 +8,7 @@
         "url": "http://github.com/nblackburn/brunch-with-vue.git"
     },
     "scripts": {
-        "watch": "brunch watch --server",
+        "start": "brunch watch --server",
         "build": "brunch build --production"
     },
     "author": {
@@ -28,7 +28,7 @@
         "vue-validator": "^2.1.1"
     },
     "devDependencies": {
-        "brunch": "2.7.5",
+        "brunch": "2.6.0",
         "vue-brunch": "^1.0.0",
         "babel-brunch": "^6.0.4",
         "babel-polyfill": "6.7.4",
