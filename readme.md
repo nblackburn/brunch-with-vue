@@ -2,6 +2,8 @@
 
 A skeleton application utilizing vue, vuex, vue-resource and vue-router.
 
+> **NOTE**: This package is no longer maintained.
+
 ## Instructions
 
 To get started, simply run the following command in your terminal...
